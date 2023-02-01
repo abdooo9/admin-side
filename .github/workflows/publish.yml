@@ -12,7 +12,7 @@ jobs:
       - name: Set time and commit
         run: echo "time=$(date +%s)" >> $GITHUB_ENV
       - name: Set commit
-        run: echo "commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+        run: echo "git_commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -22,4 +22,4 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          tag: "${{ env.version }}-dev.${{ env.time }}-${{ env.commit }}"
+          tag: "${{ env.version }}-dev.${{ env.time }}-${{ env.git_commit }}"
