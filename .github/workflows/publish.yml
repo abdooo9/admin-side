@@ -14,13 +14,13 @@ jobs:
       - run: npm install
       - run: npm run build
       - uses: JS-DevTools/npm-publish@v1
-      env:
-        version: 
-          run: npm pkg get version
-        commit: 
-          run: git rev-parse --short HEAD
-        timestamp: 
-          run: date +%s
+        env:
+          version: 
+            run: npm pkg get version
+          commit: 
+            run: git rev-parse --short HEAD
+          timestamp: 
+            run: date +%s
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: "${{ env.version }}-dev.${{ env.timestamp }}-${{ env.commit }}"
