@@ -7,6 +7,9 @@
     "files": [
         "/dist"
     ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@abdooo9"
+    },
     "scripts": {
         "build": "rm -rdf dist && npx tsc && cp src/templates dist/templates -r",
         "test": "node test/index.js",
