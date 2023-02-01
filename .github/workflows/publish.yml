@@ -16,4 +16,4 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          tag: $(npm pkg get version)-dev.$(date +%s)-$(git rev-parse --short HEAD)
+          tag: "$(npm pkg get version)-dev.$(date +%s)-$(git rev-parse --short HEAD)"
