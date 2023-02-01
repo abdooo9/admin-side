@@ -1,0 +1,40 @@
+{
+    "name": "admin-js",
+    "version": "1.0.0",
+    "description": "'admin.js is a powerful Node.js module that allows you to easily build your web admin panel.'",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "build": "rm -rdf dist && npx tsc && cp src/templates dist/templates -r",
+        "test": "node test/index.js",
+        "start": "npm run build && npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/abdooo9/admin.js.git"
+    },
+    "keywords": [
+        "admin",
+        "web",
+        "admin.js",
+        "panel"
+    ],
+    "author": "abdooo9",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/abdooo9/admin.js/issues"
+    },
+    "homepage": "https://github.com/abdooo9/admin.js#readme",
+    "devDependencies": {
+        "@types/ejs": "^3.1.1",
+        "@types/node": "^18.11.18",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "ejs": "^3.1.8"
+    }
+}
