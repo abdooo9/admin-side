@@ -13,7 +13,10 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npm run build
-      - run: echo "version=$(npm pkg get version | sed '\"')" >> $GITHUB_ENV
+      - run: version=$(npm pkg get version)
+      - run: version="${version%\"}"
+      - run: version="${version#\"}"
+      - run: echo "version=$version" >> $GITHUB_ENV
       - run: echo "time=$(date +%s)" >> $GITHUB_ENV
       - run: echo "git_commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: JS-DevTools/npm-publish@v1
