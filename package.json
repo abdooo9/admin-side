@@ -1,15 +1,12 @@
 {
-    "name": "admin-js",
+    "name": "admin-side",
     "version": "1.0.0",
-    "description": "'admin.js is a powerful Node.js module that allows you to easily build your web admin panel.'",
+    "description": "'admin-side is a powerful Node.js module that allows you to easily build your web admin panel.'",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
         "/dist"
     ],
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@abdooo9"
-    },
     "scripts": {
         "build": "rm -rdf dist && npx tsc && cp src/templates dist/templates -r",
         "test": "node test/index.js",
@@ -17,20 +14,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/abdooo9/admin.js.git"
+        "url": "git+https://github.com/abdooo9/admin-side.git"
     },
     "keywords": [
         "admin",
         "web",
-        "admin.js",
+        "admin-side",
         "panel"
     ],
     "author": "abdooo9",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/abdooo9/admin.js/issues"
+        "url": "https://github.com/abdooo9/admin-side/issues"
     },
-    "homepage": "https://github.com/abdooo9/admin.js#readme",
+    "homepage": "https://github.com/abdooo9/admin-side#readme",
     "devDependencies": {
         "@types/ejs": "^3.1.1",
         "@types/node": "^18.11.18",
