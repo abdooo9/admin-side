@@ -7,9 +7,12 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      run: echo "version=$(npm pkg get version)" >> $GITHUB_ENV
-      run: echo "time=$(date +%s)" >> $GITHUB_ENV
-      run: echo "commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+      - name: Set version
+        run: echo "version=$(npm pkg get version)" >> $GITHUB_ENV
+      - name: Set time and commit
+        run: echo "time=$(date +%s)" >> $GITHUB_ENV
+      - name: Set commit
+        run: echo "commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
