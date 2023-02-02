@@ -21,4 +21,4 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: "dev"
-      - run: npm deprecate "admin-side@${{ env.version }}-dev.${{ env.time }}-${{ env.git_commit }}.0" "This is a development version"
+      - run: npm deprecate "admin-side@dev" "This is a development version"
