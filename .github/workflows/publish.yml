@@ -17,7 +17,7 @@ jobs:
       - run: echo "time=$(date +%s)" >> $GITHUB_ENV
       - run: echo "git_commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - run: npm version prerelease --preid "dev.${{ env.time }}-${{ env.git_commit }}" --no-git-tag-version --allow-same-version
-      - run: npm deprecate "dev.${{ env.time }}-${{ env.git_commit }}" "This is a development version"
+      - run: npm deprecate "admin-side@${{ env.version }}-dev.${{ env.time }}-${{ env.git_commit }}" "This is a development version"
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
