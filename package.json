@@ -1,7 +1,7 @@
 {
     "name": "admin-side",
     "version": "1.0.0",
-    "description": "'admin-side is a powerful Node.js module that allows you to easily build your web admin panel.'",
+    "description": "admin-side is a powerful Node.js module that allows you to easily build your web admin panel.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
