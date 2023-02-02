@@ -16,7 +16,7 @@ jobs:
       - run: version=$(npm pkg get version) && echo "version=${version//\"/}" >> $GITHUB_ENV
       - run: echo "time=$(date +%s)" >> $GITHUB_ENV
       - run: echo "git_commit=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-      - run: npm version ${{ env.version }} prerelease --preid=dev.${{ env.git_commit }} --no-git-tag-version
+      - run: npm version prerelease --preid "dev.${{ env.time }}-${{ env.git_commit }}" --no-git-tag-version
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
