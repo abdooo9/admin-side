@@ -21,4 +21,3 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: "dev"
-      # - run: npm deprecate "admin-side@*dev*" "This is a development version"
