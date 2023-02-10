@@ -7,6 +7,7 @@ import { RequestOptions } from "../types/RequestOptions";
 import { SubmitButtonOptions } from "../types/SubmitButtonOptions";
 import { RenderOptions } from "../types/RenderOptions";
 import { Color } from "../types/Colors";
+import { Items } from "../types/Items";
 import * as ejs from "ejs";
 import * as path from "path";
 
@@ -76,13 +77,13 @@ class Page implements PageOptions {
 
     /**
      * Add item to the page.
-     * @param {any} item - The item to add.
+     * @param {Items} item - The item to add.
      * @example
      * const page = new <Admin>.Page();
      * page.addItem(new <Admin>.Form());
      * @returns {Page} The page.
      */
-    addItem(item: any) {
+    addItem(item: Items) {
         this.items.push(item);
         return this;
     }
@@ -93,7 +94,6 @@ class Page implements PageOptions {
      * @example
      * const page = new <Admin>.Page();
      * page.render();
-     * @returns {string} The rendered page.
      */
     render(data: RenderOptions) {
         const renderOptions = {
