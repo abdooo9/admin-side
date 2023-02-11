@@ -53,7 +53,7 @@ class Page {
          *     backgroundColor: "#fff000"
          * });
          */
-        this.backgroundColor = (data === null || data === void 0 ? void 0 : data.backgroundColor) || null;
+        this.backgroundColor = (data === null || data === void 0 ? void 0 : data.backgroundColor) || "#f5f5f5";
         /**
          * @name Page#items
          * @type {PageOptions}
@@ -66,8 +66,44 @@ class Page {
         this.items = (data === null || data === void 0 ? void 0 : data.items) || [];
     }
     /**
+     * Set the title of the page.
+     * @param {string} title - The title to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setTitle("This is a title.");
+     * @returns {Page} The page.
+     */
+    setTitle(title) {
+        this.title = title;
+        return this;
+    }
+    /**
+     * Set the description of the page.
+     * @param {string} description - The description to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setDescription("This is a description.");
+     * @returns {Page} The page.
+     */
+    setDescription(description) {
+        this.description = description;
+        return this;
+    }
+    /**
+     * Set the background color of the page.
+     * @param {Color} color - The color to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setBackgroundColor("#fff000");
+     * @returns {Page} The page.
+     */
+    setBackgroundColor(color) {
+        this.backgroundColor = color;
+        return this;
+    }
+    /**
      * Add item to the page.
-     * @param {any} item - The item to add.
+     * @param {Items} item - The item to add.
      * @example
      * const page = new <Admin>.Page();
      * page.addItem(new <Admin>.Form());
@@ -83,7 +119,6 @@ class Page {
      * @example
      * const page = new <Admin>.Page();
      * page.render();
-     * @returns {string} The rendered page.
      */
     render(data) {
         const renderOptions = {
@@ -91,10 +126,12 @@ class Page {
             dir: data.dir || "ltr",
             styleInclude: data.styleInclude || true
         };
-        return ejs.renderFile(path.join(__dirname, "..", "views", "page.ejs"), {
-            page: this,
-            renderOptions
-        });
+        return {
+            html: ejs.renderFile(path.join(__dirname, "..", "views", "page.ejs"), {
+                page: this,
+                renderOptions
+            })
+        };
     }
 }
 exports.Page = Page;

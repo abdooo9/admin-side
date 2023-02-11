@@ -5,6 +5,7 @@ import { RequestOptions } from "../types/RequestOptions";
 import { SubmitButtonOptions } from "../types/SubmitButtonOptions";
 import { RenderOptions } from "../types/RenderOptions";
 import { Color } from "../types/Colors";
+import { Items } from "../types/PageItems";
 declare class Page implements PageOptions {
     title: string;
     description: string;
@@ -20,23 +21,51 @@ declare class Page implements PageOptions {
     constructor(data?: PageOptions);
     setup(data: PageOptions): void;
     /**
+     * Set the title of the page.
+     * @param {string} title - The title to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setTitle("This is a title.");
+     * @returns {Page} The page.
+     */
+    setTitle(title: string): this;
+    /**
+     * Set the description of the page.
+     * @param {string} description - The description to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setDescription("This is a description.");
+     * @returns {Page} The page.
+     */
+    setDescription(description: string): this;
+    /**
+     * Set the background color of the page.
+     * @param {Color} color - The color to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setBackgroundColor("#fff000");
+     * @returns {Page} The page.
+     */
+    setBackgroundColor(color: Color): this;
+    /**
      * Add item to the page.
-     * @param {any} item - The item to add.
+     * @param {Items} item - The item to add.
      * @example
      * const page = new <Admin>.Page();
      * page.addItem(new <Admin>.Form());
      * @returns {Page} The page.
      */
-    addItem(item: any): this;
+    addItem(item: Items): this;
     /**
      * Render the page.
      * @param {RenderOptions} [options={}] - The options to render the page with.
      * @example
      * const page = new <Admin>.Page();
      * page.render();
-     * @returns {string} The rendered page.
      */
-    render(data: RenderOptions): Promise<string>;
+    render(data: RenderOptions): {
+        html: Promise<string>;
+    };
 }
 declare class Form implements FormOptions {
     fields: Array<FieldOptions>;
