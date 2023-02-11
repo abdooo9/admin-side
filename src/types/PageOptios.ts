@@ -1,5 +1,5 @@
 import { Color } from './Colors';
-import { Items } from './Items';
+import { Items } from './PageItems';
 
 export interface PageOptions {
     title: string;

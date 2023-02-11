@@ -7,7 +7,7 @@ import { RequestOptions } from "../types/RequestOptions";
 import { SubmitButtonOptions } from "../types/SubmitButtonOptions";
 import { RenderOptions } from "../types/RenderOptions";
 import { Color } from "../types/Colors";
-import { Items } from "../types/Items";
+import { Items } from "../types/PageItems";
 import * as ejs from "ejs";
 import * as path from "path";
 
