@@ -61,7 +61,7 @@ class Page implements PageOptions {
          *     backgroundColor: "#fff000"
          * });
          */
-        this.backgroundColor = data?.backgroundColor || null;
+        this.backgroundColor = data?.backgroundColor || "#f5f5f5";
 
         /**
          * @name Page#items
@@ -73,6 +73,45 @@ class Page implements PageOptions {
          * });
          */
         this.items = data?.items || [];
+    }
+
+    /**
+     * Set the title of the page.
+     * @param {string} title - The title to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setTitle("This is a title.");
+     * @returns {Page} The page.
+     */
+    setTitle(title: string) {
+        this.title = title;
+        return this;
+    }
+
+    /**
+     * Set the description of the page.
+     * @param {string} description - The description to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setDescription("This is a description.");
+     * @returns {Page} The page.
+     */
+    setDescription(description: string) {
+        this.description = description;
+        return this;
+    }
+
+    /**
+     * Set the background color of the page.
+     * @param {Color} color - The color to set.
+     * @example
+     * const page = new <Admin>.Page();
+     * page.setBackgroundColor("#fff000");
+     * @returns {Page} The page.
+     */
+    setBackgroundColor(color: Color) {
+        this.backgroundColor = color;
+        return this;
     }
 
     /**
