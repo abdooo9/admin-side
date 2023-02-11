@@ -102,10 +102,12 @@ class Page implements PageOptions {
             styleInclude: data.styleInclude || true
         };
 
-        return ejs.renderFile(path.join(__dirname, "..", "views", "page.ejs"), {
-            page: this,
-            renderOptions
-        });
+        return {
+            html: ejs.renderFile(path.join(__dirname, "..", "views", "page.ejs"), {
+                page: this,
+                renderOptions
+            })
+        }
     }
 }
 
