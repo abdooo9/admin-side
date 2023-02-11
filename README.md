@@ -63,7 +63,7 @@ app.get('/admin/signup', async (req, res) => {
 })
 ```
 
-## documentation
+## Documentation
 #### Classes
 - [Page](./docs/classes/page.md)
 - [Form](./docs/classes/form.md)

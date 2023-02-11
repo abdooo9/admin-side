@@ -60,6 +60,7 @@ Set the form title
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | title | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &check; | Untitled | The form title |
+
 Returns: [Form](./form.md)
 
 <hr>
@@ -70,6 +71,8 @@ Set the form icon
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | icon | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &check; |  | The form icon |
 
+Returns: [Form](./form.md)
+
 <hr>
 
 #### .addField
@@ -77,6 +80,7 @@ Add a field to the form
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | field | [Field](../typedefs/FieldOptions.md) | &check; |  | The field to add |
+
 Returns: [Form](./form.md)
 
 <hr>
@@ -86,6 +90,7 @@ Set the form request path and method
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | request | [Request](../typedefs/RequestOptions.md) | &check; |  | The request path and method |
+
 Returns: [Form](./form.md)
 
 <hr>
@@ -95,6 +100,8 @@ Set the form submit button
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | button | [Button](../typedefs/ButtonOptions.md) | &check; |  | The submit button |
+
+Returns: [Form](./form.md)
 
 <hr>
 

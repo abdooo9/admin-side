@@ -47,7 +47,8 @@ Set the page title
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | title | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &check; | Untitled | The page title |
-returns: [Page](./page.md)
+
+Returns: [Page](./page.md)
 
 <hr>
 
@@ -56,7 +57,8 @@ Set the page description
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | description | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &check; |  | The page description |
-returns: [Page](./page.md)
+
+Returns: [Page](./page.md)
 
 <hr>
 
@@ -65,7 +67,8 @@ Set the page background color
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | color | [Color](../typedefs/Color.md) | &check; | #f5f5f5 | The page background color |
-returns: [Page](./page.md)
+
+Returns: [Page](./page.md)
 
 <hr>
 
@@ -74,6 +77,7 @@ Add an item to the page
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | item | [PageItems](../typedefs/PageItems.md) | &check; |  | The item to add |
+
 Returns: [Page](./page.md)
 
 <hr>
@@ -83,4 +87,5 @@ Render the page
 | PARAMETER | TYPE | OPTIONAL | DEFAULT | DESCRIPTION |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | data | [RenderOptions](../typedefs/PageRenderOptions.md) | &check; | {} | Page render options |
+
 Returns: [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[RenderedPage](../typedefs/RenderedPage.md)>
