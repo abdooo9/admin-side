@@ -1,3 +1,4 @@
+const app = require('express')()
 const Admin = require('../dist/index.js');
 
 const form = new Admin.Form()
@@ -8,10 +9,9 @@ const form = new Admin.Form()
     .addField({ id: "password", label: "كلمة المرور", type: "password" })
     .setSubmitButton({ label: "حفظ", color: "outline-success" })
 
-console.log(form.render({ dir: "rtl", lang: "en", styleInclude: true }).html.toString())
+const page = new Admin.Page()
+    .addItem(form)
 
-async function run() {
-    console.log((await (await form.render({ dir: "rtl", lang: "en", styleInclude: true })).html).toString())
-    new Admin.Page({ items: [form] })
-}
-run()
+app.get("/admin", async (req, res) => {
+    res.send((await page.render()).html)
+})
