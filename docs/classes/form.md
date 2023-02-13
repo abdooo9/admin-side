@@ -16,42 +16,42 @@ new Form(data);
 
 ## Table of Contents
 
-|              Properties              |                   Methods                  |
-| :----------------------------------: | :----------------------------------------: |
-|        [title](form.md#title)        |        [setTitle](form.md#settitle)        |
-|         [icon](form.md#icon)         |         [setIcon](form.md#seticon)         |
-|       [fields](form.md#fields)       |        [addField](form.md#addfield)        |
-|      [request](form.md#request)      |      [setRequest](form.md#setrequest)      |
-| [submitButton](form.md#submitbutton) | [setSubmitButton](form.md#setsubmitbutton) |
-|                                      |          [render](form.md#render)          |
+|               Properties              |                   Methods                   |
+| :-----------------------------------: | :-----------------------------------------: |
+|        [title](form.md#.title)        |        [setTitle](form.md#.settitle)        |
+|         [icon](form.md#.icon)         |         [setIcon](form.md#.seticon)         |
+|       [fields](form.md#.fields)       |        [addField](form.md#.addfield)        |
+|      [request](form.md#.request)      |      [setRequest](form.md#.setrequest)      |
+| [submitButton](form.md#.submitbutton) | [setSubmitButton](form.md#.setsubmitbutton) |
+|                                       |          [render](form.md#.render)          |
 
 ## Properties
 
-**.title**
+#### **.title**
 
 The form title Type: ?[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ***
 
-**.icon**
+#### **.icon**
 
 The form icon from [FontAwesome](https://fontawesome.com/icons?d=gallery) Type: ?[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ***
 
-**.fields**
+#### **.fields**
 
 The form fields Type: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array)<[Field](../typedefs/FieldOptions.md)>
 
 ***
 
-**.request**
+#### **.request**
 
 The request path and method of the form. Type: ?[Request](../typedefs/RequestOptions.md)
 
 ***
 
-**.submitButton**
+#### **.submitButton**
 
 The submit button of the form. Type: ?[Button](../typedefs/ButtonOptions.md)
 
@@ -67,7 +67,7 @@ Support this project to **complete its life**
 
 ## Methods
 
-**.setTitle**
+#### **.setTitle**
 
 Set the form title
 
@@ -79,7 +79,7 @@ Returns: [Form](form.md)
 
 ***
 
-**.setIcon**
+#### **.setIcon**
 
 Set the form icon
 
@@ -91,7 +91,7 @@ Returns: [Form](form.md)
 
 ***
 
-**.addField**
+#### **.addField**
 
 Add a field to the form
 
@@ -103,7 +103,7 @@ Returns: [Form](form.md)
 
 ***
 
-**.setRequest**
+#### **.setRequest**
 
 Set the form request path and method
 
@@ -115,7 +115,7 @@ Returns: [Form](form.md)
 
 ***
 
-**.setSubmitButton**
+#### **.setSubmitButton**
 
 Set the form submit button
 
@@ -127,7 +127,7 @@ Returns: [Form](form.md)
 
 ***
 
-**.render**
+#### **.render**
 
 Render the form Returns: [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise)<[RenderedPage](../typedefs/RenderedPage.md)>
 

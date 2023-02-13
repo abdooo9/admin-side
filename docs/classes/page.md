@@ -18,29 +18,29 @@ new Page(data);
 
 ## Table of Contents
 
-|                 Properties                 |                      Methods                     |
-| :----------------------------------------: | :----------------------------------------------: |
-|           [title](page.md#title)           |           [setTitle](page.md#settitle)           |
-|     [description](page.md#description)     |     [setDescription](page.md#setdescription)     |
-| [backgroundColor](page.md#backgroundcolor) | [setBackgroundColor](page.md#setbackgroundcolor) |
-|                                            |            [addItem](page.md#additem)            |
-|                                            |             [render](page.md#render)             |
+|                  Properties                 |                      Methods                      |
+| :-----------------------------------------: | :-----------------------------------------------: |
+|           [title](page.md#.title)           |           [setTitle](page.md#.settitle)           |
+|     [description](page.md#.description)     |     [setDescription](page.md#.setdescription)     |
+| [backgroundColor](page.md#.backgroundcolor) | [setBackgroundColor](page.md#.setbackgroundcolor) |
+|                                             |            [addItem](page.md#.additem)            |
+|                                             |             [render](page.md#.render)             |
 
 ## Properties
 
-**.title**
+#### **.title**
 
 The page title Type: ?[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ***
 
-**.description**
+#### **.description**
 
 The page description Type: ?[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ***
 
-**.backgroundColor**
+#### **.backgroundColor**
 
 The page background color Type: ?[Color](../typedefs/Color.md)
 
@@ -56,7 +56,7 @@ Support this project to **complete its life**
 
 ## Methods
 
-**.setTitle**
+#### **.setTitle**
 
 Set the page title
 
@@ -68,7 +68,7 @@ Returns: [Page](page.md)
 
 ***
 
-**.setDescription**
+#### **.setDescription**
 
 Set the page description
 
@@ -80,7 +80,7 @@ Returns: [Page](page.md)
 
 ***
 
-**.setBackgroundColor**
+#### **.setBackgroundColor**
 
 Set the page background color
 
@@ -92,7 +92,7 @@ Returns: [Page](page.md)
 
 ***
 
-**.addItem**
+#### **.addItem**
 
 Add an item to the page
 
@@ -104,7 +104,7 @@ Returns: [Page](page.md)
 
 ***
 
-**.render**
+#### **.render**
 
 Render the page
 
