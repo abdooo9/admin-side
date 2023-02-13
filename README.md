@@ -2,7 +2,7 @@
 <div align="center">
     <br />
     <p>
-        <a href="https://github.com/abdooo9/admin-side"><img src="./docs/imgs/.gitbook/assets/banner.png" width="546" alt="admin-side" /></a>
+        <a href="https://github.com/abdooo9/admin-side"><img src="./docs/.gitbook/assets/banner.png" width="546" alt="admin-side" /></a>
     </p>
     <br />
     <p>
