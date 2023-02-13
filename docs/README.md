@@ -6,6 +6,8 @@ description: >-
 
 # Get Started
 
+<figure><img src=".gitbook/assets/Untitled design.png" alt="Admin-Side"><figcaption></figcaption></figure>
+
 _This package is meant to provide an easy way to_ create an admin panel, with which you can control and create forms, tables, etc.
 
 ## About
