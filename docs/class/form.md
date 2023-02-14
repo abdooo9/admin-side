@@ -75,7 +75,7 @@ Set the form title
 | :-------: | :------------------------------------------------------------------------------------------------: | :------: | :------: | :------------: |
 |   title   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |     ✓    | Untitled | The form title |
 
-Returns: [Form](form.md)
+Returns: [Form](../classes/form.md)
 
 ***
 
@@ -87,7 +87,7 @@ Set the form icon
 | :-------: | :------------------------------------------------------------------------------------------------: | :------: | :-----: | :-----------: |
 |    icon   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |     ✓    |         | The form icon |
 
-Returns: [Form](form.md)
+Returns: [Form](../classes/form.md)
 
 ***
 
@@ -99,7 +99,7 @@ Add a field to the form
 | :-------: | :----------------------------------: | :------: | :-----: | :--------------: |
 |   field   | [Field](../typedefs/FieldOptions.md) |     ✓    |         | The field to add |
 
-Returns: [Form](form.md)
+Returns: [Form](../classes/form.md)
 
 ***
 
@@ -111,7 +111,7 @@ Set the form request path and method
 | :-------: | :--------------------------------------: | :------: | :-----: | :-------------------------: |
 |  request  | [Request](../typedefs/RequestOptions.md) |     ✓    |         | The request path and method |
 
-Returns: [Form](form.md)
+Returns: [Form](../classes/form.md)
 
 ***
 
@@ -123,7 +123,7 @@ Set the form submit button
 | :-------: | :------------------------------------: | :------: | :-----: | :---------------: |
 |   button  | [Button](../typedefs/ButtonOptions.md) |     ✓    |         | The submit button |
 
-Returns: [Form](form.md)
+Returns: [Form](../classes/form.md)
 
 ***
 

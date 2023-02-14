@@ -8,7 +8,7 @@ description: >-
 
 ## Constructor
 
-```
+```javascript
 new Page(data);
 ```
 
@@ -64,7 +64,7 @@ Set the page title
 | :-------: | :------------------------------------------------------------------------------------------------: | :------: | :------: | :------------: |
 |   title   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |     ✓    | Untitled | The page title |
 
-Returns: [Page](page.md)
+Returns: [Page](../classes/page.md)
 
 ***
 
@@ -76,7 +76,7 @@ Set the page description
 | :---------: | :------------------------------------------------------------------------------------------------: | :------: | :-----: | :------------------: |
 | description | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |     ✓    |         | The page description |
 
-Returns: [Page](page.md)
+Returns: [Page](../classes/page.md)
 
 ***
 
@@ -88,7 +88,7 @@ Set the page background color
 | :-------: | :---------------------------: | :------: | :-----: | :-----------------------: |
 |   color   | [Color](../typedefs/Color.md) |     ✓    | #f5f5f5 | The page background color |
 
-Returns: [Page](page.md)
+Returns: [Page](../classes/page.md)
 
 ***
 
@@ -100,7 +100,7 @@ Add an item to the page
 | :-------: | :-----------------------------------: | :------: | :-----: | :-------------: |
 |    item   | [PageItems](../typedefs/PageItems.md) |     ✓    |         | The item to add |
 
-Returns: [Page](page.md)
+Returns: [Page](../classes/page.md)
 
 ***
 

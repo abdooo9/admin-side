@@ -2,7 +2,11 @@
 
 * [Get Started](README.md)
 
-## classes
+## classes <a href="#class" id="class"></a>
 
-* [Form](classes/form.md)
-* [Page](classes/page.md)
+* [Form](class/form.md)
+* [Page](class/page.md)
+
+## typedefs <a href="#typedef" id="typedef"></a>
+
+* [FormOptions](typedef/formoptions.md)
