@@ -10,9 +10,9 @@ description: Create a new Form
 new Form(data);
 ```
 
-| PARAMETER |                    TYPE                   | OPTIONAL | DEFAULT |  DESCRIPTION |
-| :-------: | :---------------------------------------: | :------: | :-----: | :----------: |
-|    data   | [FormOptions](../typedefs/FormOptions.md) |     ✓    |    {}   | Form options |
+| PARAMETER |                   TYPE                   | OPTIONAL | DEFAULT |  DESCRIPTION |
+| :-------: | :--------------------------------------: | :------: | :-----: | :----------: |
+|    data   | [FormOptions](../typedef/formoptions.md) |     ✓    |    {}   | Form options |
 
 ## Table of Contents
 
