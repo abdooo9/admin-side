@@ -9,4 +9,5 @@
 
 ## typedefs <a href="#typedef" id="typedef"></a>
 
+* [FieldOption](typedef/fieldoption.md)
 * [FormOptions](typedef/formoptions.md)
